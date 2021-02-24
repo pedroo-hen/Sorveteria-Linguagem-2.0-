@@ -25,9 +25,9 @@ resposta = int(input("Opção: "))
 if resposta == 3:
   item = input("Insira sua sugestão ao cardápio:")
   print("Aguarde...")
+  sleep(3)
   print("Sua sugestão foi registrada com sucesso!")
-
-
+  exit()
 
 if resposta == 1:
   nome = input('Qual é o seu nome? ')
