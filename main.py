@@ -129,7 +129,7 @@ class Barca(Sorvete):
         else:
             print('Voçê nao preencheu os dados corretamente. Faça seu pedido novamente.')
   
-        lista = [x, quantidade, acompanhamento]
+        lista = [quantidade, Sabor, acompanhamento]
         print ('''
         Seu pedido foi uma a barca de: ''',lista)
         print("""___________________________________________________________________________
