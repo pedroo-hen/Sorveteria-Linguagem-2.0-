@@ -22,6 +22,13 @@ print('-' * 55)
 
 resposta = int(input("Opção: "))
 
+if resposta == 3:
+  item = input("Insira sua sugestão ao cardápio:")
+  print("Aguarde...")
+  print("Sua sugestão foi registrada com sucesso!")
+
+
+
 if resposta == 1:
   nome = input('Qual é o seu nome? ')
 
@@ -305,7 +312,3 @@ class Casquinha(Sorvete):
 |              | [5] - Leite Condensado    | [5] - chocolate derretido        |
 |______________|___________________________|__________________________________|
 """)
-if resposta == 3:
-  item = input("Insira sua sugestão ao cardápio:")
-  print("Aguarde...")
-  print("Sua sugestão foi registrada com sucesso!")
