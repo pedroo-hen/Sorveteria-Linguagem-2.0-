@@ -17,6 +17,7 @@ print('Seja bem vindo a Sorveteria, escolha uma opção abaixo: ')
 print('-' * 55)
 print("[1]. Fazer cadastro.")
 print("[2]. Fazer pedido.")
+print("[3]. Sugerir novo item ao cardápio. ")
 print('-' * 55)
 
 resposta = int(input("Opção: "))
@@ -72,11 +73,11 @@ class Barca(Sorvete):
         print("""___________________________________________________________________________
 |    Peso  |          Sabor            |           Acompanhamento         |
 |__________|___________________________|__________________________________|
-|[1] - 1kg | [1] - Chocolate           | [1] - Flocos                     |
-|[2] - 2kg | [2] - Morango             | [2] - cereja                     |
-|          | [3] - Balnilia            | [3] - granulado                  |
-|          | [4] - Menta com chocolate | [4] - bala de goma com chocolate |
-|          | [5] - Abacaxi             | [5] - chocolate derretido        |
+|[1] - 1kg | [1] - Uva                 | [1] - Flocos                     |
+|[2] - 2kg | [2] - Creme               | [2] - cereja                     |
+|          | [3] - Coco                | [3] - granulado                  |
+|          | [4] - Maracujá            | [4] - bala de goma com chocolate |
+|          | [5] - Doce de leite       | [5] - chocolate derretido        |
 |__________|___________________________|__________________________________|
 """)
         print("OBS:Não se esqueça de digitar o numero do ingrediente desejado: ")
@@ -92,11 +93,11 @@ class Barca(Sorvete):
           raise Exception("A opção selecionada é invalida.")
 
         print("Esses são os sabores: ")
-        print("[1] - Chocolate")
-        print("[2] - Morango")
-        print("[3] - Balnilia")
-        print("[4] - Menta com chocolate")
-        print("[5] - Abacaxi")
+        print("[1] - Uva")
+        print("[2] - Creme")
+        print("[3] - Coco")
+        print("[4] - Maracujá")
+        print("[5] - Doce de leite")
 
         Sabor = int(input("Opção: "))
 
@@ -134,11 +135,11 @@ class Barca(Sorvete):
         print("""___________________________________________________________________________
 |    Peso  |          Sabor            |           Acompanhamento         |
 |__________|___________________________|__________________________________|
-|[1] - 1kg | [1] - Chocolate           | [1] - Flocos                     |
-|[2] - 2kg | [2] - Morango             | [2] - cereja                     |
-|          | [3] - Balnilia            | [3] - granulado                  |
-|          | [4] - Menta com chocolate | [4] - bala de goma com chocolate |
-|          | [5] - Abacaxi             | [5] - chocolate derretido        |
+|[1] - 1kg | [1] - Uva                 | [1] - Flocos                     |
+|[2] - 2kg | [2] - Creme               | [2] - cereja                     |
+|          | [3] - Coco                | [3] - granulado                  |
+|          | [4] - Maracujá            | [4] - bala de goma com chocolate |
+|          | [5] - Doce de leite       | [5] - chocolate derretido        |
 |__________|___________________________|__________________________________|
 """)
 
@@ -156,8 +157,8 @@ class Copo(Sorvete):
 |[1] - 300ml | [1] - Chocolate           | [1] - Flocos                     |
 |[2] - 500ml | [2] - Morango             | [2] - cereja                     |
 |            | [3] - Balnilia            | [3] - granulado                  |
-|            | [4] - Menta com chocolate | [4] - bala de goma com chocolate |
-|            | [5] - Abacaxi             | [5] - chocolate derretido        |
+|            | [4] - Maracuja            | [4] - bala de goma com chocolate |
+|            | [5] - Ceu azul            | [5] - chocolate derretido        |
 |____________|___________________________|__________________________________|
 """)
 
@@ -178,8 +179,8 @@ class Copo(Sorvete):
         print("[1] - Chocolate")
         print("[2] - Morango")
         print("[3] - Balnilia")
-        print("[4] - Menta com chocolate")
-        print("[5] - Abacaxi")
+        print("[4] - Maracuja")
+        print("[5] - Ceu azul")
 
         sabor = int(input("Opção: "))
 
@@ -220,8 +221,8 @@ class Copo(Sorvete):
 |[1] - 300ml | [1] - Chocolate           | [1] - Flocos                     |
 |[2] - 500ml | [2] - Morango             | [2] - cereja                     |
 |            | [3] - Balnilia            | [3] - granulado                  |
-|            | [4] - Menta com chocolate | [4] - bala de goma com chocolate |
-|            | [5] - Abacaxi             | [5] - chocolate derretido        |
+|            | [4] - Maracujá            | [4] - bala de goma com chocolate |
+|            | [5] - Ceu azul            | [5] - chocolate derretido        |
 |____________|___________________________|__________________________________|
 """)
 
@@ -297,10 +298,14 @@ class Casquinha(Sorvete):
         print("""_______________________________________________________________________________
 |  Quantidade  |          Sabor            |           Acompanhamento         |
 |______________|___________________________|__________________________________|
-|[1] - 1 bola  | [1] - Chocolate           | [1] - Flocos                     |
+|[1] - 1 bola  | [1] - Balnilia            | [1] - Flocos                     |
 |[2] - 2 bolas | [2] - Morango             | [2] - cereja                     |
-|              | [3] - Balnilia            | [3] - granulado                  |
-|              | [4] - Misto               | [4] - bala de goma com chocolate |
-|              | [5] - caramelo            | [5] - chocolate derretido        |
+|              | [3] - Uva                 | [3] - granulado                  |
+|              | [4] - Maracujá            | [4] - bala de goma com chocolate |
+|              | [5] - Leite Condensado    | [5] - chocolate derretido        |
 |______________|___________________________|__________________________________|
 """)
+if resposta == 3:
+  item = input("Insira sua sugestão ao cardápio:")
+  print("Aguarde...")
+  print("Sua sugestão foi registrada com sucesso!")
